@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/JS_Samples.iml" filepath="$PROJECT_DIR$/JS_Samples.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaScriptRemote_ipr/JavaScriptRemote_ipr.iml" filepath="$PROJECT_DIR$/JavaScriptRemote_ipr/JavaScriptRemote_ipr.iml" />
     </modules>
   </component>
 </project>

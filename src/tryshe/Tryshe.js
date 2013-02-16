@@ -36,8 +36,8 @@ function HtmlTableCells(id, rows, cols, htmlZero, htmlOne) {
             }
             var
                 bitCode = htmlTable.currChar.ToBinary(),
-                tabRows = new Array(tblBodyObj.rows.length);
-            tabRows = tblBodyObj.rows;
+                //tabRows = new Array(tblBodyObj.rows.length);
+                tabRows = tblBodyObj.rows;
 
             var curBit = 0,
                 tabRowsInitialCnt = tabRows.length,
