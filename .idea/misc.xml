@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="EntryPointsManager">
+    <entry_points version="2.0" />
+  </component>
   <component name="IdProvider" IDEtalkID="AAE7A2DFA55CDF59035B26BB7E843CC8" />
   <component name="ProjectKey">
     <option name="state" value="https://github.com/human87/JavaScript_ipr.git" />
