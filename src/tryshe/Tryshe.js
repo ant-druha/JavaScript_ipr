@@ -21,14 +21,29 @@ function HtmlTableCells(id, rows, cols, htmlZero, htmlOne) {
 
         var addColumn = function (index, htmlTable) {
 
-            var tblHeadObj = htmlTable.tableRoot.tHead;
-            if (tblHeadObj != null) {
-                for (var h = 0; h < tblHeadObj.rows.length; h++) {
-                    var newTH = document.createElement('th');
-                    tblHeadObj.rows[h].appendChild(newTH);
-                    newTH.innerHTML = '[th] row:' + h + ', cell: ' + (tblHeadObj.rows[h].cells.length - 1) + '. Char=' + htmlTable.currChar;
-                }
+            var
+                tblHeadObj = htmlTable.tableRoot.tHead,
+                HeadRow,
+                newHeadCell;
+
+            if (tblHeadObj == null || tblHeadObj == "undefined" ) {
+                tblHeadObj = htmlTable.tableRoot.appendChild(document.createElement('thead'));
             }
+            if (tblHeadObj.rows.length == 0) {
+                HeadRow = tblHeadObj.insertRow(-1);
+            } else {
+                HeadRow = tblHeadObj.rows[0];
+            }
+            newHeadCell = HeadRow.insertCell(index);
+            newHeadCell.innerHTML = 'Char=' + htmlTable.currChar.char;
+
+//            if (tblHeadObj != null) {
+//                for (var h = 0; h < tblHeadObj.rows.length; h++) {
+//                    var newTH = document.createElement('th');
+//                    tblHeadObj.rows[h].appendChild(newTH);
+//                    newTH.innerHTML = '[th] row:' + h + ', cell: ' + (tblHeadObj.rows[h].cells.length - 1) + '. Char=' + htmlTable.currChar;
+//                }
+//            }
 
             var tblBodyObj = htmlTable.tableRoot.tBodies[0];
             if (tblBodyObj == null) {
