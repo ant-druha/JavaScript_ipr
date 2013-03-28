@@ -8,7 +8,7 @@ package sample;
  * To change this template use File | Settings | File Templates.
  */
 public class HelloWorld {
-    public static String getMessage(){
+    public static String getMessage() {
         return "Hello World";
     }
 }

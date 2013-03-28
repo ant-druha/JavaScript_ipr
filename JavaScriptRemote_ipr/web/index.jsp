@@ -10,11 +10,12 @@
 <html>
     <link rel="stylesheet" type="text/css" href="styles/MyStylesRem.css"/>
     <head><title>Simple page</title></head>
-        <body>
-            <h3 class="message"><%=HelloWorld.getMessage()%></h3>
-            <script type="text/javascript" src="scripts/numbers.js">
-            </script>
+    <body>
+        <h3 class="message"><%=HelloWorld.getMessage()%>
+        </h3>
+        <script type="text/javascript" src="scripts/numbers.js">
+        </script>
         <p><a href="html/TrysheRem.html">Tryshe</a></p>
-        </body>
+    </body>
 
 </html>
