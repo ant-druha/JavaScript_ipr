@@ -4,11 +4,14 @@ img.tryshe {
     display: block;
 }
 
+/* region test */
 td, tr, img {
     padding: 0px;
     margin: 0px;
     border: none;
 }
+
+/* endregion */
 
 table {
     border-collapse: collapse;

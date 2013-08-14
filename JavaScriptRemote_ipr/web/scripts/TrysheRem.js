@@ -14,6 +14,7 @@ function HtmlTableCells(id, rows, cols, htmlZero, htmlOne) {
 			cell = row.insertCell(-1);
 			cell.innerHTML = htmlZero;
 		}
+
 	}
 
 	// methods
@@ -63,8 +64,7 @@ function HtmlTableCells(id, rows, cols, htmlZero, htmlOne) {
 					var newRow = htmlTable.tableRoot.insertRow(-1);
 					for (var j = 0; j < index; j++) {
 						var newCell = newRow.insertCell(j);
-						newCell.innerHTML = htmlTable.htmlImgZero;
-						;
+						newCell.innerHTML = htmlTable.htmlImgZero
 					}
 					var newCell = newRow.insertCell(index);
 					curBit = bitCode.charAt(i);

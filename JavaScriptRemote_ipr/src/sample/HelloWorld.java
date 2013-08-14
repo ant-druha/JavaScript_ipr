@@ -8,6 +8,8 @@ package sample;
  * To change this template use File | Settings | File Templates.
  */
 public class HelloWorld {
+	private int i;
+
     public static String getMessage() {
         return "Hello World";
     }
