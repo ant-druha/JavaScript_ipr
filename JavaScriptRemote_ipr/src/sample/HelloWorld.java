@@ -11,6 +11,8 @@ public class HelloWorld {
 	private int i;
 
     public static String getMessage() {
+ 	System.out.println("sd kfds lkjfd ");
+	System.out.println("sd kfds lkjfd ");
         return "Hello World";
     }
 }
